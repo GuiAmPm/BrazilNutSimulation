@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Brazilian nuts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body onload="handleLoaded();">
+    <div id="content">
+        <canvas id="canvas" width="800" height="800"> </canvas>
+        <div id="config-div">
+            <fieldset title="Container configurations">
+                <legend>Container:</legend>
+                <label>
+                    Container Size (%): <input id="containerSize" type="number" step="1" value="50" max="1000" onchange="init()" />
+                </label><br/>
+                <label>
+                    Motion type: <select id="motionType" onchange="handleMotionTypeChanged()">
+                        <option value="0">None</option>
+                        <option value="1">Up & down</option>
+                        <option value="2">Left/Up</option>
+                        <option value="3">Right/Up</option>
+                    </select>
+                </label>
+            </fieldset>
+            
+            <fieldset title="Content configurations">
+                <legend>Content:</legend>
+                <label>
+                    Quantity: <input id="quantity" type="number" step="1" value="100" min="1" max="1000" onchange="init()" />
+                </label><br/>
+                <label>
+                        Ratio (Larger/smaller): <input id="ratio" type="number" step="1" value="10" min="1" max="100" onchange="init()" />
+                    </label><br/>
+                <label>
+                    Smaller ball size (%): <input id="smallSize" type="number" step="1" value="25" min="1" max="100" onchange="init()" />
+                </label><br/>
+                <label>
+                    Larger ball size (%): <input id="bigSize" type="number" step="1" value="75" min="1" max="100" onchange="init()" />
+                </label>
+            </fieldset>
+
+            <br>
+            Click the canvas for fullscreen mode.
+            <br>
+            <span id="wtf"><a href="https://github.com/GuiAmPm">Guilherme Amorim</a>&nbsp;- 2018 -&nbsp;<a href="https://github.com/GuiAmPm/BrazilNutSimulation">About this</a>.</span>
+        </div>
+        <br style="clear: both" />
+    </div>
+</body>
+</html>

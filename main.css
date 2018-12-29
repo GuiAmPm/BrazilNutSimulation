@@ -1,0 +1,97 @@
+body {
+    background-color: #21007F;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+
+#content {
+    margin: 0 auto;
+    width: 1360px;
+}
+
+canvas {
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: black;
+    cursor: pointer;
+    margin-right: 25px;
+    float: left;
+}
+
+fieldset {
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    width: 500px;
+}
+
+fieldset legend {
+    font-size: 20px;
+}
+
+fieldset label {
+    line-height: 50px;
+    font-size: 25px;
+}
+
+fieldset label input, fieldset label select {
+    background-color: transparent;
+    color: white;
+    border: solid 2px white;
+    border-radius: 20px;
+    font-size: 25px;
+    width: 150px;
+    text-align: center;
+    float: right;
+}
+
+#config-div {
+    height: 800px;
+}
+
+
+#wtf{
+    display: flex;
+    vertical-align: bottom;
+    margin-top: 18%;
+}
+
+a, a:hover, a:visited {
+    color: white;
+}
+
+@media only screen and (max-width: 1350px) {
+
+    #content {
+        width: 800px;
+        max-width: calc(100vw - 19px);
+    }
+
+    fieldset {
+        width: 775px;
+        max-width: calc(100vw - 45px);
+    }
+
+    canvas {
+        width: 800px;
+        max-width: calc(100vw - 19px);
+        float: none;
+        margin: 0 auto;
+        width: 800px;
+    }    
+}
+
+@media only screen and (max-width: 460px) {
+    fieldset label {
+        font-size: 15px;
+    }
+
+    fieldset legend {
+        font-size: 10px;
+    }
+
+    fieldset label input, fieldset label select {
+        font-size: 15px;
+        width: 75px 
+    }
+}
