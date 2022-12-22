@@ -14,9 +14,6 @@ For more details on the effect, watch the video: https://www.youtube.com/watch?v
 
 Also, I'm nuts and from Brazil. Fitting right? :)
 
-## References
-
-http://www.randygaul.net/2013/03/27/game-physics-engine-part-1-impulse-resolution/
 
 ## License
 
